@@ -1,0 +1,13 @@
+{
+    "Servers": {
+        "1": {
+            "Name": "Local PostgreSQL Server",
+            "Group": "Local",
+            "Port": 5432,
+            "Username": "airflow",
+            "Host": "postgres",
+            "SSLMode": "prefer",
+            "MaintenanceDB": "postgres"
+        }
+    }
+}

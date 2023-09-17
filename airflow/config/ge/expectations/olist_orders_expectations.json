@@ -1,0 +1,48 @@
+{
+    "data_asset_type": null,
+    "expectation_suite_name": "olist_orders_expectations",
+    "expectations": [
+        {
+          "expectation_context": {
+              "description": null
+          },
+          "expectation_type": "expect_table_row_count_to_be_between",
+          "ge_cloud_id": null,
+          "kwargs": {
+              "max_value": 100000,
+              "min_value": 90000
+          },
+          "meta": {}
+        },
+        {
+            "expectation_context": {
+                "description": null
+            },
+            "expectation_type": "expect_column_values_to_be_unique",
+            "ge_cloud_id": null,
+            "kwargs": {
+                "column": "order_id"
+            },
+            "meta": {}
+        },
+        {
+            "expectation_context": {
+                "description": null
+            },
+            "expectation_type": "expect_column_distinct_values_to_be_in_set",
+            "ge_cloud_id": null,
+            "kwargs": {
+                "column": "order_status",
+                "value_set": [
+                  "delivered", "invoiced", "shipped", "processing", "unavailable",
+                  "canceled", "created", "approved"
+                ]
+            },
+            "meta": {}
+        }
+    ],
+    "ge_cloud_id": null,
+    "meta": {
+        "great_expectations_version": "0.16.13"
+    }
+}

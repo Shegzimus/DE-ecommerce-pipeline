@@ -1,0 +1,2 @@
+instance_id: abcdabcd-1111-2222-3333-abcdabcdabcd
+connection_string_bigquery: bigquery://the-data-engineering-project/de_dataset_testing
